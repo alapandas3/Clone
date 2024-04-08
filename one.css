@@ -42,10 +42,19 @@ a:hover {
 }
 
 img{
-    padding: 10px;
+    padding: 2px;
+    width: 100%;
 }
+
+h4{
+    color: #60636F;
+    font-size: 24px;
+
+}
+
 ul,
 li ol {
+    color: #777777;
     text-align: left;
     list-style: none;
     font-size: 14.4px;
@@ -294,7 +303,9 @@ li ol {
     align-items: stretch;
 }
 
-.webinar-image {}
+#webinar-list {
+
+}
 
 .webinar-info {
     padding: 30px 15px 30px 40px;
@@ -419,7 +430,9 @@ span {
     border-radius: 4px;
 
 }
-
+span img{
+    width: min-content;
+}
 
 
 #bottom-links ul {
