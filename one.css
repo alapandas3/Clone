@@ -41,12 +41,12 @@ a:hover {
     color: #db3742;
 }
 
-img{
+img {
     padding: 2px;
     width: 100%;
 }
 
-h4{
+h4 {
     color: #60636F;
     font-size: 24px;
 
@@ -61,25 +61,7 @@ li ol {
     font-weight: 400;
 }
 
-@media (min-width: 992px) {
-    #parent-container {
-        max-width: 970px;
-        margin: auto;
-    }
-
-
-}
-
-@media (min-width: 1200px) {
-    #parent-container {
-        max-width: 1170px;
-        margin: auto;
-    }
-}
-
-
-
-@media (max-width: 990px) {
+@media (max-width: 992px) {
     #CardContainer {
         display: inline-block;
 
@@ -105,6 +87,38 @@ li ol {
         width: 100%;
     }
 }
+
+@media (min-width: 992px) {
+
+    #parent-container {
+        max-width: 970px;
+        margin: auto;
+    }
+
+    #CardContainer {
+        border-top: 2px solid #f0f0f0;
+        border-bottom: 2px solid #f0f0f0;
+
+        padding-top: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        justify-content: center;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+        gap: 30px;
+    }
+}
+
+@media (min-width: 1200px) {
+    #parent-container {
+        max-width: 1170px;
+        margin: auto;
+    }
+}
+
+
+
 
 .header {
     position: sticky;
@@ -203,14 +217,27 @@ li ol {
     transition: all 0 ease;
 }
 
+#NavBar1,
 #NavBar {
     background-color: #fff;
-
+    z-index: 999;
 
 }
 
 .nav-link.dropdown-toggle::after {
     display: none;
+}
+
+#navbarNavAltMarkup {
+    /* position: fixed;
+    padding: 0 0 0 14px;
+    top: 15vh;
+    left: 0;
+    height: 100vh;
+    z-index: 99;
+
+    background-color: #a3a6b0;
+    width: 20vh; */
 }
 
 .dropdown-menu {
@@ -237,22 +264,8 @@ li ol {
     margin-left: 50px;
 }
 
-@media (min-width: 992px) {
-
-
-    #CardContainer {
-        border-top: 2px solid #f0f0f0;
-        border-bottom: 2px solid #f0f0f0;
-
-        padding-top: 20px;
-        padding-left: 20px;
-        padding-right: 20px;
-        justify-content: center;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-
-        gap: 30px;
-    }
+.VideoPlayer {
+    z-index: -1;
 }
 
 #Card {
@@ -289,8 +302,9 @@ li ol {
 }
 
 #ButtonCup {
-    margin-bottom: 0;
-    margin-top: auto;
+    display: flex;
+    /* margin-bottom: 0; */
+    margin: auto;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
     padding: 4% 0 7% 0;
@@ -303,9 +317,7 @@ li ol {
     align-items: stretch;
 }
 
-#webinar-list {
-
-}
+#webinar-list {}
 
 .webinar-info {
     padding: 30px 15px 30px 40px;
@@ -395,7 +407,7 @@ span {
     color: #db3742;
 }
 
-#copyright-footer {
+#copyright-footer{
     row-gap: 12px;
     display: grid;
     grid-template-columns: auto auto;
@@ -430,7 +442,8 @@ span {
     border-radius: 4px;
 
 }
-span img{
+
+span img {
     width: min-content;
 }
 
