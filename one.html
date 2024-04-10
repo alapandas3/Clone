@@ -9,7 +9,6 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-    <script src="script.js"></script>
     <link rel="shortcut icon" href="media/favicon-196x196.png" type="image/x-icon">
     <link rel="stylesheet" href="one.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,12 +20,12 @@
         <div id="parent-container">
             <div id="TopBarHolder">
 
-                <div>
-                    <form action="" id="Search" method="get">
-                        <input type="text" id="Search_InputBox" placeholder="Search Here...">
-                        <button id="Search_Button">Search</button>
-                    </form>
-                </div>
+
+                <form action="" id="Search" method="get">
+                    <input type="text" id="Search_InputBox" placeholder="Search Here...">
+                    <button id="Search_Button">Search</button>
+                </form>
+
                 <div id="Buttons">
                     <button id="button">Wifi Survey</button>
                     <button id="button">Quick Quote</button>
@@ -35,59 +34,142 @@
         </div>
     </div>
     <header class="header ">
-        <div id="NavBar1">
-
-            <div id="parent-container">
-
-                <div id="NavBar">
-                    <nav class="navbar navbar-expand-lg ">
-                        <div class="container-fluid position-relative">
-                            <a class="navbar-brand" href="#"><img src="./media//logo.svg" alt=""></a>
-                            <button class="navbar-toggler"  type="button" data-bs-toggle="collapse"
-                                data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
-                                aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
+        <div id="NavBar">
+            <nav class="navbar navbar-expand-lg ">
+                <div class="container position-relative">
+                    <a class="navbar-brand" href="#"><img class="img-fluid" src="./media//logo.svg" alt=""></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavAltMarkup" onclick="hidesidebar()" aria-controls="navbarNavAltMarkup"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
 
 
-                            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-                                <div class="navbar-nav position-relative ">
-                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item" href="">Action</a>
-                                        <a class="dropdown-item" href="">Another action</a>
-                                        <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item" href="">Something else here</a>
-                                    </div>
-                                    <a class="nav-link dropdown-toggle position-relative" href="#"
-                                        data-bs-toggle="dropdown">About</a>
-                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item" href="">Action</a>
-                                        <a class="dropdown-item" href="">Another action</a>
-                                        <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item" href="">Something else here</a>
-                                    </div>
-                                    <a class="nav-link dropdown-toggle position-relative" href="#"
-                                        data-bs-toggle="dropdown">Networking</a>
-                                    <a class="nav-link dropdown-toggle position-relative" data-bs-toggle="dropdown"
-                                        href="#">Wireless</a>
-                                    <a class="nav-link dropdown-toggle position-relative" href="#"
-                                        data-bs-toggle="dropdown">Services</a>
-                                    <a class="nav-link position-relative" href="#">Sectors</a>
-                                    <a class="nav-link dropdown-toggle position-relative" href="#"
-                                        data-bs-toggle="dropdown">Case
-                                        Studies</a>
-                                    <a class="nav-link dropdown-toggle position-relative" data-bs-toggle="dropdown"
-                                        href="#">News</a>
-                                    <a class="nav-link dropdown-toggle position-relative" data-bs-toggle="dropdown"
-                                        href="#">Contact</a>
-                                </div>
-                            </div>
+                    <div class="collapse navbar-collapse justify-content-end">
+                        <div class="navbar-nav position-relative ">
+
+                            <a class="nav-link dropdown-toggle position-relative" href="#"
+                                data-bs-toggle="dropdown">About</a>
+
+                            <a class="nav-link dropdown-toggle position-relative" href="#"
+                                data-bs-toggle="dropdown">Networking</a>
+                            <a class="nav-link dropdown-toggle position-relative" data-bs-toggle="dropdown"
+                                href="#">Wireless</a>
+                            <a class="nav-link dropdown-toggle position-relative" href="#"
+                                data-bs-toggle="dropdown">Services</a>
+                            <a class="nav-link position-relative" href="#">Sectors</a>
+                            <a class="nav-link dropdown-toggle position-relative" href="#"
+                                data-bs-toggle="dropdown">Case
+                                Studies</a>
+                            <a class="nav-link dropdown-toggle position-relative" data-bs-toggle="dropdown"
+                                href="#">News</a>
+                            <a class="nav-link dropdown-toggle position-relative" data-bs-toggle="dropdown"
+                                href="#">Contact</a>
                         </div>
-                    </nav>
+                    </div>
+
+
 
                 </div>
-            </div>
+            </nav>
+
+
         </div>
+        <div id="sidebar" style="display: none;">
+            <div class="py-4 px-3">
+                <div class="container-fluid position-relative">
+                    <a class="navbar-brand" href="#"><img class="img-fluid" src="./media//logo.svg" alt=""></a>
+                </div>
+            </div>
+
+            <div class="menu-primary-container">
+                <ul id="menu-primary-1" class="menu">
+                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-7851">
+                        <a href="/about-us/">About</a>
+                        <button class="expand-btn" data-target="sub-menu1"><i class="bi bi-arrow-down"></i></button>
+                        
+                        <ul class="sub-menu" id="sub-menu1">
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5811"><a
+                                    href="/about-us/">About Us</a></li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7852"><a
+                                    href="/partners/">Partners</a></li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8742"><a
+                                    href="/sustainability/">Sustainability</a></li>
+                        </ul>
+                    </li>
+                    <li
+                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-7086">
+                        <a href="/networking/">Networking</a>
+                        <button class="expand-btn"  data-target="sub-menu2"><i class="bi bi-arrow-down"></i></button>
+                        <ul class="sub-menu" id="sub-menu2">
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8224"><a
+                                    href="/data-cabling/">Data Cabling</a></li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8470"><a
+                                    href="/network-switches/">Network Switches</a></li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7088"><a
+                                    href="/security/">Security</a></li>
+                            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8413"><a
+                                    href="/network-audits/">Network Audits</a></li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8880"><a
+                                    href="/networking/smart-cameras-cctv/">Smart
+                                    Cameras</a></li>
+                        </ul>
+                    </li>
+                    <li
+                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-5977">
+                        <a href="/wireless-solutions/">Wireless</a>
+                        <button class="expand-btn" data-target="sub-menu3"><i class="bi bi-arrow-down"></i></button>
+                        <ul class="sub-menu" id="sub-menu3">
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7143"><a
+                                    href="/wifi-site-survey/">Wi-Fi Surveys</a></li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8510"><a
+                                    href="/iot-network-design/">IoT Network Design</a>
+                            </li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8529"><a
+                                    href="/cloud-managed-wireless-networks/">Cloud Managed
+                                    Networks</a></li>
+                        </ul>
+                    </li>
+                    <li
+                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-8177">
+                        <a href="#">Services</a>
+                        <button class="expand-btn" data-target="sub-menu4"><i class="bi bi-arrow-down"></i></button>
+                        <ul class="sub-menu" id="sub-menu4">
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8414"><a
+                                    href="/network-support/">Network Support</a></li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7107"><a
+                                    href="/web-filtering/">Web Filtering</a></li>
+                        </ul>
+                    </li>
+                    <li
+                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-7969">
+                        <a href="#">Sectors</a>
+                        <button class="expand-btn" data-target="sub-menu5"><i class="bi bi-arrow-down"></i></button>
+                        <ul class="sub-menu" id="sub-menu5">
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9052"><a
+                                    href="/education-wifi/">Education</a></li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9043"><a
+                                    href="/local-government-wifi/">Local Government</a>
+                            </li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9042"><a
+                                    href="/warehouse-wifi/">Warehouses</a></li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9041"><a
+                                    href="/construction-site-wifi/">Construction</a></li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9040"><a
+                                    href="/office-wifi/">Business</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5952"><a
+                            href="/case-studies/">Case Studies</a></li>
+                    <li class="blog menu-item menu-item-type-post_type menu-item-object-page menu-item-5802"><a
+                            href="/blog/">News</a></li>
+                    <li class="contact-btn menu-item menu-item-type-post_type menu-item-object-page menu-item-6726"><a
+                            href="/contact/">Contact</a></li>
+                </ul>
+            </div>
+
+        </div>
+
     </header>
     <div class="position-relative VideoPlayer">
         <video id="myVideo" class="w-100" autoplay>
@@ -373,7 +455,7 @@
     </footer>
     <div class="parent-container container">
 
-        <div id="copyright-footer">
+        <div id="copyright-footer" style="display: none;">
             <div class="" style="color: #777777;">© COPYRIGHT 2024 - REDWAY NETWORKS LTD. COMPANY NO. 9867985</div>
             <div id="bottom-links" class="">
                 <ul>
@@ -388,6 +470,7 @@
         </div>
     </div>
 
+    <script src="script.js"></script>
 </body>
 
 </html>
