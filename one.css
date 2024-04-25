@@ -87,10 +87,17 @@ li ol {
 }
 
 @media (max-width:768px) {
+    #container-footer {
+        grid-template-columns: repeat(3, 1fr);
+        grid-column: span(2);
+    }
+
     #Buttons button:nth-child(1) {
         display: none;
     }
-    
+    #Buttons{
+        position: absolute;
+    }
     #Buttons {
         display: none;
     }
@@ -113,7 +120,7 @@ li ol {
         justify-content: center;
 
     }
-    
+
     #Buttons button:nth-child(2) {
         display: none;
     }
@@ -141,10 +148,11 @@ li ol {
         max-width: 970px;
         margin: auto;
     } */
-    #copyright-footer{
+    #copyright-footer {
         display: contents;
-        
+
     }
+
     #container-footer {
 
         display: grid;
@@ -153,6 +161,7 @@ li ol {
         color: #777777;
         font-weight: 300;
     }
+
     #CardContainer {
         border-top: 2px solid #f0f0f0;
         border-bottom: 2px solid #f0f0f0;
@@ -177,7 +186,7 @@ li ol {
         color: #777777;
         font-weight: 300;
     }
-    
+
     .container {
         max-width: 1170px;
         margin: auto;
@@ -433,9 +442,7 @@ nav a:hover {
     padding-left: 15px;
 }
 
-.bi-arrow-down {
-    
-}
+.bi-arrow-down {}
 
 .menu-primary-container ul {
     padding: 0;
@@ -478,7 +485,7 @@ nav a:hover {
     margin: auto;
     padding: 50px 10px 50px 10px;
     font-size: medium;
-    margin-left: 50px;
+    /* margin-left: 50px; */
 }
 
 .VideoPlayer {
@@ -624,8 +631,8 @@ span {
 
 #copyright-footer {
     row-gap: 12px;
-    display: grid;
-    grid-template-columns: auto auto;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     color: #777777;
     padding: 25px 0px 0px 0px;
@@ -665,6 +672,7 @@ span img {
 
 #bottom-links ul {
     display: flex;
+    flex-wrap: wrap;
     gap: 20px;
     color: #777777;
     font-size: 13px;
