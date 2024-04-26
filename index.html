@@ -25,7 +25,7 @@ Sidenavbar borde issue -->
         <div class="container">
             <div id="TopBarHolder">
 
-                <form action="" id="Search" method="get">
+                <form class="justify-content-center" id="Search" method="get">
                     <input type="text" id="Search_InputBox" placeholder="Search Here...">
                     <button id="Search_Button">Search</button>
                 </form>
@@ -417,7 +417,7 @@ Sidenavbar borde issue -->
             <div id="CardContainer">
                 <div id="Card">
                     <a href="">
-                        <img width="100%" id="CardImage"
+                        <img width="100%" id="NewsCardImage"
                             src="https://www.redwaynetworks.com/wp-content/uploads/wifi-surveys-1.jpg" alt="">
                     </a>
                     <h2 id="card-title">WiFi Survey</h2>
@@ -435,7 +435,7 @@ Sidenavbar borde issue -->
                 </div>
                 <div id="Card">
                     <a href="">
-                        <img width="100%" id="CardImage"
+                        <img width="100%" id="NewsCardImage"
                             src="https://www.redwaynetworks.com/wp-content/uploads/wireless-solutions-1.jpg" alt="">
                     </a>
                     <h2 id="card-title">Wireless Solutions</h2>
@@ -452,7 +452,7 @@ Sidenavbar borde issue -->
                 </div>
                 <div id="Card">
                     <a href="">
-                        <img width="100%" id="CardImage"
+                        <img width="100%" id="NewsCardImage"
                             src="https://www.redwaynetworks.com/wp-content/uploads/network-solutions.jpg" alt="">
                     </a>
                     <h2 id="card-title">Network Solutions</h2>
@@ -469,10 +469,10 @@ Sidenavbar borde issue -->
         </div>
 
         <div class="webinar-box row mx-auto my-5 pt-5">
-            <div class="col-md-4 align-content-center "><img class="rounded-4"
+            <div class="col-lg-4 align-content-center webinar-img"><img class="rounded-4"
                     src="https://www.redwaynetworks.com/wp-content/uploads/laptop-hands.png"
                     alt="Network Solutions Picture"></div>
-            <div class="col-md-8 py-3 px-4">
+            <div class="col-lg-8 py-3 px-4">
                 <div id="">
                     <p class="fw-light pb-3">Webinar:</p>
                 </div>
@@ -622,38 +622,43 @@ Sidenavbar borde issue -->
         <div class="container">
             <div id="footer-parent">
                 <div id="container-footer">
-                    <div><a href=""><img width="100%" src="media\logo.svg" alt=""></a></div>
+                    <a href=""><img class="footer-img my-4" width="100%" src="media\logo.svg" alt=""></a>
                     <div id="contact-holder">
                         <div id="contact-footer">
                             <span>
-                                <a id="bottom-link" style="text-decoration: none;" href="tel:01908046400"><i
-                                        class="bi bi-telephone-fill" style="color: #db3742;">
-                                    </i>&nbsp;
-                                    01908046400
+                                <a id="bottom-link" class="d-flex " style="text-decoration: none;"
+                                    href="tel:01908046400">
+                                    <i class="bi bi-telephone-fill pe-3" style="color: #db3742;"></i>
+                                    <p class="fs-6">01908046400</p>
                                 </a>
                             </span>
                         </div>
                         <div id="contact-footer">
                             <span>
                                 <a class="d-flex" id="bottom-link" href="mailto:info@redwaynetworks.com">
-                                    <i class="bi bi-envelope-open"></i>
+                                    <i class="bi bi-envelope-open pe-3"></i>
                                     <p class="fs-6">&nbsp;info@redwaynetworks.com</p>
                                 </a>
                             </span>
 
                         </div>
                         <div id="contact-footer">
-                            <span><i class="bi bi-clock"></i>&nbsp;Mon - Fri: 09:00 - 17:30</span>
+                            <span class="d-flex"><i class="bi bi-clock pe-3"></i>
+                                <p>Mon - Fri: 09:00 - 17:30</p>
+                            </span>
 
                         </div>
                     </div>
                     <div id="footer-location">
                         <span>
-                            <i class="bi bi-pin-fill"></i>
+                            <a class="d-flex" id="bottom-link" href="/">
+                                <i class="bi bi-pin-fill pe-3"></i>
+                                <p>Aurora House, Deltic Ave.,<br>
+                                    Rooksley, Bradwell Common,<br>
+                                    Milton Keynes, MK13 8LW
+                                </p>
+                            </a>
                         </span>
-                        Aurora House, Deltic Ave.,<br>
-                        Rooksley, Bradwell Common,<br>
-                        Milton Keynes, MK13 8LW
                     </div>
                     <div id="footer-links">
                         <div class="">
@@ -688,7 +693,8 @@ Sidenavbar borde issue -->
     </footer>
     <div class="container-fluid ">
         <div id="copyright-footer">
-            <div class="fw-normal" style="color: #777777;">© COPYRIGHT 2024 - REDWAY NETWORKS LTD. COMPANY NO. 9867985</div>
+            <div class="fw-normal" style="color: #777777;">© COPYRIGHT 2024 - REDWAY NETWORKS LTD. COMPANY NO. 9867985
+            </div>
             <div id="bottom-links" class="fw-normal">
                 <ul>
                     <a id="bottom-link" href="">T&C'S</a>
