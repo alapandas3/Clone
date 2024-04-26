@@ -16,7 +16,7 @@ Sidenavbar borde issue -->
     <link rel="shortcut icon" href="media/favicon-196x196.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Title of the Page -->
+
     <title>WiFi & Networking Specialists | Design, Install & Support (redwaynetworks.com)</title>
 </head>
 
@@ -25,12 +25,10 @@ Sidenavbar borde issue -->
         <div class="container">
             <div id="TopBarHolder">
 
-                <!-- Form which searches -->
                 <form action="" id="Search" method="get">
                     <input type="text" id="Search_InputBox" placeholder="Search Here...">
                     <button id="Search_Button">Search</button>
                 </form>
-                <!-- Buttons for Quick Access -->
                 <div id="Buttons">
                     <button class="btn btn-danger">Wifi Survey</button>
                     <button class="btn btn-danger">Quick Quote</button>
@@ -38,9 +36,9 @@ Sidenavbar borde issue -->
             </div>
         </div>
     </div>
-    <!-- Header Starts -->
-    <header class="header" >
-        <!-- Normal Navbar -->
+
+    <header class="header">
+
         <div id="NavBar">
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container position-relative justify-content-between">
@@ -188,7 +186,7 @@ Sidenavbar borde issue -->
 
 
         </div>
-        <!-- Sidebar -->
+
         <div id="sidebar" style="display: none;">
             <div class="py-4 px-3">
                 <div class="container-fluid position-relative">
@@ -208,181 +206,166 @@ Sidenavbar borde issue -->
 
             <div class="menu-primary-container">
                 <ul id="menu-primary-1" class="menu">
-                    <!-- one -->
+
                     <div
                         class="menu-item border-dark-subtle border-top position-relative menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-7851">
                         <div id="1" class="menu-trigger  d-flex justify-content-between">
-                            <span class="d-flex align-items-center ps-4">
-                                <a href="/about-us/">About</a>
-                            </span>
-                            <button onclick=expand(1)  class="expand-btn border-start border-dark-subtle p-2" data-target="sub-menu1"><i
-                                    class="bi bi-arrow-down" id="bi-arrow-down"></i>
+                            <a class="d-flex align-items-center ps-4 container " href="/about-us/">
+                                About
+                            </a>
+                            <button onclick=expand(1) class="expand-btn border-start border-dark-subtle p-2"
+                                data-target="sub-menu1"><i class="bi bi-arrow-down" id="bi-arrow-down"></i>
                             </button>
                         </div>
-                        <div>
-                            <ul class="sub-menu" id="sub-menu1">
-                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5811">
-                                    <a href="/about-us/">About Us</a>
-                                </li>
-                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7852">
-                                    <a href="/partners/">Partners</a>
-                                </li>
-                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8742">
-                                    <a href="/sustainability/">Sustainability</a>
-                                </li>
-                            </ul>
-                        </div>
+                        <ul class="sub-menu" id="sub-menu1">
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5811">
+                                <a href="/about-us/">About Us</a>
+                            </li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7852">
+                                <a href="/partners/">Partners</a>
+                            </li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8742">
+                                <a href="/sustainability/">Sustainability</a>
+                            </li>
+                        </ul>
                     </div>
-                    <!-- two -->
+
                     <div
                         class="menu-item position-relative menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-7851 border-dark-subtle border-top">
                         <div id="2" class="menu-trigger  d-flex justify-content-between">
-                            <span class="d-flex align-items-center ps-4">
-                                <a href="/networking/">Networking</a>
-                            </span>
-                            <button onclick=expand(2)  class="expand-btn border-start border-dark-subtle p-2" data-target="sub-menu2"><i
-                                    class="bi bi-arrow-down" id="bi-arrow-down"></i></button>
+                            <a class="d-flex align-items-center ps-4 container " href="/networking/">
+                                Networking
+                            </a>
+                            <button onclick=expand(2) class="expand-btn border-start border-dark-subtle p-2"
+                                data-target="sub-menu2"><i class="bi bi-arrow-down" id="bi-arrow-down"></i></button>
                         </div>
-                        <div>
-                            <ul class="sub-menu" id="sub-menu2">
-                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8224">
-                                    <a href="/data-cabling/">Data Cabling</a>
-                                </li>
-                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8470">
-                                    <a href="/network-switches/">Network Switches</a>
-                                </li>
-                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7088">
-                                    <a href="/security/">Security</a>
-                                </li>
-                                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8413">
-                                    <a href="/network-audits/">Network Audits</a>
-                                </li>
-                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8880">
-                                    <a href="/networking/smart-cameras-cctv/">Smart
-                                        Cameras</a>
-                                </li>
-                            </ul>
-                        </div>
+                        <ul class="sub-menu" id="sub-menu2">
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8224">
+                                <a href="/data-cabling/">Data Cabling</a>
+                            </li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8470">
+                                <a href="/network-switches/">Network Switches</a>
+                            </li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7088">
+                                <a href="/security/">Security</a>
+                            </li>
+                            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8413">
+                                <a href="/network-audits/">Network Audits</a>
+                            </li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8880">
+                                <a href="/networking/smart-cameras-cctv/">Smart
+                                    Cameras</a>
+                            </li>
+                        </ul>
                     </div>
-                    <!-- two -->
+
                     <div
                         class="menu-item position-relative menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-5977 border-dark-subtle border-top">
                         <div id="3" class="menu-trigger  d-flex justify-content-between">
-                            <span class="d-flex align-items-center ps-4">
-                                <a href="/wireless-solutions/">Wireless</a></span>
-                            <button onclick=expand(3)  class="expand-btn border-start border-dark-subtle p-2" data-target="sub-menu3"><i
-                                    class="bi bi-arrow-down" id="bi-arrow-down"></i></button>
+                            <a class="d-flex align-items-center ps-4 container  " href="/wireless-solutions/">
+                                Wireless
+                            </a>
+                            <button onclick=expand(3) class="expand-btn border-start border-dark-subtle p-2"
+                                data-target="sub-menu3"><i class="bi bi-arrow-down" id="bi-arrow-down"></i></button>
                         </div>
-                        <div>
-
-
-                            <ul class="sub-menu" id="sub-menu3">
-                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7143">
-                                    <a href="/wifi-site-survey/">Wi-Fi Surveys</a>
-                                </li>
-                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8510">
-                                    <a href="/iot-network-design/">IoT Network Design</a>
-                                </li>
-                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8529">
-                                    <a href="/cloud-managed-wireless-networks/">Cloud Managed
-                                        Networks</a>
-                                </li>
-                            </ul>
-                        </div>
+                        <ul class="sub-menu" id="sub-menu3">
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7143">
+                                <a href="/wifi-site-survey/">Wi-Fi Surveys</a>
+                            </li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8510">
+                                <a href="/iot-network-design/">IoT Network Design</a>
+                            </li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8529">
+                                <a href="/cloud-managed-wireless-networks/">Cloud Managed
+                                    Networks</a>
+                            </li>
+                        </ul>
                     </div>
-                    <!-- three -->
+
                     <div
                         class="menu-item position-relative menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-8177 border-dark-subtle border-top">
                         <div id="4" class="menu-trigger  d-flex justify-content-between">
-                            <span class="d-flex align-items-center ps-4">
-                                <a href="#">Services</a>
-                            </span>
-                            <button onclick=expand(4)  class="expand-btn border-start border-dark-subtle p-2" data-target="sub-menu4"><i
-                                    class="bi bi-arrow-down" id="bi-arrow-down"></i></button>
+                            <a class="d-flex align-items-center ps-4 container " href="/services">
+                                Services
+                            </a>
+                            <button onclick=expand(4) class="expand-btn border-start border-dark-subtle p-2"
+                                data-target="sub-menu4"><i class="bi bi-arrow-down" id="bi-arrow-down"></i></button>
                         </div>
-                        <div>
-
-
-                            <ul class="sub-menu" id="sub-menu4">
-                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8414">
-                                    <a href="/network-support/">Network Support</a>
-                                </li>
-                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7107">
-                                    <a href="/web-filtering/">Web Filtering</a>
-                                </li>
-                            </ul>
-                        </div>
+                        <ul class="sub-menu" id="sub-menu4">
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8414">
+                                <a href="/network-support/">Network Support</a>
+                            </li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7107">
+                                <a href="/web-filtering/">Web Filtering</a>
+                            </li>
+                        </ul>
                     </div>
-                    <!-- four -->
+
                     <div
                         class="menu-item position-relative menu-item-type-custom menu-item-object-custom menu-item-has-children border-dark-subtle border-top menu-item-7969">
                         <div id="5" class="menu-trigger  d-flex justify-content-between">
 
 
-                            <span class="d-flex align-items-center ps-4">
-
-                                <a href="#">Sectors</a>
-                            </span>
-                            <button onclick=expand(5)  class="expand-btn border-start border-dark-subtle p-2" data-target="sub-menu5"><i
-                                    class="bi bi-arrow-down" id="bi-arrow-down"></i></button>
+                            <a class="d-flex align-items-center ps-4 container " href="/sectors">
+                                Sectors
+                            </a>
+                            <button onclick=expand(5) class="expand-btn border-start border-dark-subtle p-2"
+                                data-target="sub-menu5"><i class="bi bi-arrow-down" id="bi-arrow-down"></i></button>
                         </div>
-                        <div>
+                        <ul class="sub-menu" id="sub-menu5">
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9052">
+                                <span>
 
+                                    <a href="/education-wifi/">Education</a>
+                            </li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9043">
+                                <span>
 
-                            <ul class="sub-menu" id="sub-menu5">
-                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9052">
-                                    <span>
+                                    <a href="/local-government-wifi/">Local Government</a>
+                            </li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9042">
+                                <span>
 
-                                        <a href="/education-wifi/">Education</a>
-                                </li>
-                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9043">
-                                    <span>
+                                    <a href="/warehouse-wifi/">Warehouses</a>
+                            </li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9041">
+                                <span>
 
-                                        <a href="/local-government-wifi/">Local Government</a>
-                                </li>
-                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9042">
-                                    <span>
+                                    <a href="/construction-site-wifi/">Construction</a>
+                            </li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9040">
+                                <span>
 
-                                        <a href="/warehouse-wifi/">Warehouses</a>
-                                </li>
-                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9041">
-                                    <span>
-
-                                        <a href="/construction-site-wifi/">Construction</a>
-                                </li>
-                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9040">
-                                    <span>
-
-                                        <a href="/office-wifi/">Business</a>
-                                </li>
-                            </ul>
-                        </div>
+                                    <a href="/office-wifi/">Business</a>
+                            </li>
+                        </ul>
                     </div>
-                    <!-- five -->
-                    <div class="menu-item menu-item-type-post_type border-dark-subtle border-top menu-item-object-page menu-item-5952">
-                        <!-- < class="menu-trigger d-flex justify-content-between">
-                        </> -->
+
+                    <div
+                        class="menu-item menu-item-type-post_type border-dark-subtle border-top menu-item-object-page menu-item-5952">
+                        
                         <div class="menu-trigger py-2  d-flex justify-content-between">
 
-                            <a class="d-flex align-items-center ps-4" href="/case-studies/">Case Studies</a>
+                            <a class="d-flex align-items-center ps-4 container " href="/case-studies/">Case Studies</a>
                         </div>
                     </div>
-                    <!-- six -->
-                    <div class="blog menu-item border-dark-subtle border-top menu-item-type-post_type menu-item-object-page menu-item-5802">
-                        <!-- < class="menu-trigger d-flex justify-content-between">
-                        </> -->
+
+                    <div
+                        class="blog menu-item border-dark-subtle border-top menu-item-type-post_type menu-item-object-page menu-item-5802">
+
                         <div class="menu-trigger  py-2  d-flex justify-content-between">
 
-                            <a class="d-flex align-items-center ps-4" href="/blog/">News</a>
+                            <a class="d-flex align-items-center ps-4 container " href="/blog/">News</a>
                         </div>
                     </div>
-                    <!-- seven -->
-                    <div class="contact-btn menu-item border-dark-subtle border-top menu-item-type-post_type menu-item-object-page menu-item-6726">
-                        <!-- < class="menu-trigger d-flex justify-content-between">
-                        </> -->
+
+                    <div
+                        class="contact-btn menu-item border-dark-subtle border-top menu-item-type-post_type menu-item-object-page menu-item-6726">
+
+
                         <div class="menu-trigger  py-2  d-flex justify-content-between">
 
-                            <a class="d-flex align-items-center ps-4" href="/contact/">Contact</a>
+                            <a class="d-flex align-items-center ps-4 container " href="/contact/">Contact</a>
                         </div>
                     </div>
                 </ul>
@@ -392,13 +375,13 @@ Sidenavbar borde issue -->
 
     </header>
 
-    <!-- Video Player -->
+
     <div class="position-relative VideoPlayer">
         <video id="myVideo" class="w-100" autoplay>
             <source src="https://www.redwaynetworks.com/wp-content/uploads/revslide1.mp4" type="video/mp4">
         </video>
 
-        <!-- Text on Video -->
+
         <div id="additionalText" class="position-absolute top-50 start-50 translate-middle text-center">
             <h3 id="playerheading" style="color: #f0f0f0;">
 
@@ -411,7 +394,7 @@ Sidenavbar borde issue -->
     </div>
     <div class="container">
 
-        <!-- Home Part -->
+
         <div id="homeIntro">
 
             <div id="description">
@@ -430,7 +413,7 @@ Sidenavbar borde issue -->
                     innovation.</p>
             </div>
 
-            <!-- Card -->
+
             <div id="CardContainer">
                 <div id="Card">
                     <a href="">
@@ -484,7 +467,7 @@ Sidenavbar borde issue -->
                 </div>
             </div>
         </div>
-        <!-- Webinar Box -->
+
         <div class="webinar-box row mx-auto my-auto pt-5">
             <div class="col-md-4 align-content-center "><img class="rounded-4"
                     src="https://www.redwaynetworks.com/wp-content/uploads/laptop-hands.png"
@@ -512,19 +495,20 @@ Sidenavbar borde issue -->
         </div>
 
     </div>
-    <!-- News Card -->
+
     <div id="news">
         <div class=" container">
-            <!-- News Header -->
+
             <div class="news-header">
                 <div>
                     <h2 style="color: #60636f;">Latest News:</h2>
                 </div>
                 <div>
-                    <h6><a href="" style="color: #db3742; font-weight: 300;">Explore More <span>*</span></a></h6>
+                    <h6><a href="" style="color: #db3742; font-weight: 300;">Explore More <span><i
+                                    class="bi bi-arrow-right"></i></span></a></h6>
                 </div>
             </div>
-            <!-- News Container -->
+
             <div class="news-container" id="CardContainer">
                 <div class="news-card">
                     <div class="news-img rounded-2"><img id="CardImage"
@@ -562,7 +546,6 @@ Sidenavbar borde issue -->
         </div>
     </div>
     <div class=" container">
-        <!-- Partners Container -->
         <div id="partners-container">
             <div id="homepartners">
                 <div class="row">
@@ -621,7 +604,6 @@ Sidenavbar borde issue -->
         </div>
     </div>
 
-    <!-- FOOTER -->
     <footer style="border-top: solid 3px #f0f0f0; border-bottom: solid 3px #f0f0f0; padding: 10vh 0 8vh 0;">
         <div class="container">
             <div id="footer-parent">
@@ -693,7 +675,6 @@ Sidenavbar borde issue -->
         </div>
     </footer>
     <div class="container-fluid ">
-        <!-- Copyright Footer -->
         <div id="copyright-footer">
             <div class="" style="color: #777777;">© COPYRIGHT 2024 - REDWAY NETWORKS LTD. COMPANY NO. 9867985</div>
             <div id="bottom-links" class="">

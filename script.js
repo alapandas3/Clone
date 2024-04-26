@@ -1,6 +1,7 @@
 let counter = false; let counter1 = false; let counter2 = false;
 const li = document.getElementsByClassName(".menu-item");
 const buttons = document.querySelectorAll('.expand-btn');
+
 buttons.forEach(button => {
     const bar = document.getElementById('bi-arrow-down');
 
@@ -9,14 +10,9 @@ buttons.forEach(button => {
         const targetDiv = document.getElementById(targetId);
 
         if (targetDiv.style.display === 'contents') {
-            // button.style.paddingBottom='18px';
-            // targetDiv.parentElement.parentElement.classList.remove('bg-dark');
-            // targetDiv.parentElement.parentElement.classList.remove('text-white');
-            // button.style.marginBottom = '16px'
+
             targetDiv.style.display = 'none';
         } else {
-            // targetDiv.parentElement.parentElement.classList.add('bg-dark-subtle');
-            // targetDiv.parentElement.parentElement.classList.add('text-white');
             bar.style.paddingBottom = '5px';
             targetDiv.style.display = 'contents';
         }
@@ -24,21 +20,25 @@ buttons.forEach(button => {
 });
 
 function expand(param) {
-    const keys = document.getElementById(param);
-    if (!counter2) {
-        console.log("open");
-        keys.classList.add('text-danger');
-        keys.style.color = 'white';
-        keys.classList.add('bg-dark');
+    const element = document.getElementById(param);
+    const parentNode = element.parentNode;
+    parentNode.classList.contains('menu-opened') ?
+        parentNode.classList.remove('menu-opened') :
+        parentNode.classList.add('menu-opened');
 
-    }
-    else {
-        console.log("close");
-        keys.classList.remove('text-danger');
-        keys.style.color = 'white';
-        keys.classList.remove('bg-dark');
-    }
-    counter2 = !counter2;
+
+    // if (!counter2) {
+    //     console.log("open");
+    //     keys.classList.add('text-danger');
+    //     keys.classList.add('bg-dark');
+
+    // }
+    // else {
+    //     console.log("close");
+    //     keys.classList.remove('text-danger');
+    //     keys.classList.remove('bg-dark');
+    // }
+    // counter2 = !counter2;
 
 }
 /*

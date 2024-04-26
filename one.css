@@ -291,13 +291,14 @@ li ol {
 
 #Search {
     display: flex;
-    padding: 10px;
+    
     padding: auto;
 }
 
 #Search_InputBox {
     border: 0px solid white;
     padding: 10px 15px;
+    width: 100%;
 }
 
 #Search_Button {
@@ -308,7 +309,7 @@ li ol {
     font-weight: 300;
     border: 0px solid transparent;
     color: white;
-    width: 100%;
+    width: min-content;
     cursor: pointer;
 }
 
