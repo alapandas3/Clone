@@ -116,9 +116,6 @@ li ol {
 }
 
 @media (max-width:500px) {
-    #additionalText h3 {
-        font-size: 18px;
-    }
 
     #additionalText p {
         font-size: 14px;
@@ -215,9 +212,7 @@ li ol {
         display: contents;
     }
 
-    #additionalText h3 {
-        font-size: 50px;
-    }
+
 
     #container-footer {
         display: grid;
@@ -559,17 +554,93 @@ nav a {
     height: 100%;
 }
 
+@media only screen and (min-width: 1200px) {
+    .h3 {
+        font-size: 61px;
+        line-height: 61px;
+    }
+
+    .h6 {
+        font-size: 36px;
+    }
+}
+@media only screen and (max-width: 1200px) {
+    .h3 {
+        font-size: 61px;
+        line-height: 61px;
+    }
+
+    .h6 {
+        font-size: 36px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .h3 {
+        font-size: 47px;
+        line-height: 57px;
+    }
+
+    .h6 {
+        font-size: 28px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .h3 {
+        font-size: 42px;
+        line-height: 45px;
+    }
+
+    .h6 {
+        font-size: 22px;
+    }
+
+    #cv_post-8670 .container.parent {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .h3 {
+        font-size: 31px;
+        line-height: 31px;
+    }
+
+    .h6 {
+        font-size: 19px;
+        line-height: 23px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .slider-banner .slick-slide video {
+        min-height: 315px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .h3 {
+        font-size: 25px;
+        line-height: 31px;
+    }
+
+    .h6 {
+        font-size: 17px;
+        line-height: 23px;
+    }
+}
+
 #additionalText h3 {
-    position: relative;
-    font-size: 66px;
-    font-weight: 400;
+    /* font-size: 61px;
+    line-height: 61px; */
     top: 40%;
 }
 
 #playersubheading {
-    position: relative;
-    font-weight: 300;
-    font-size: 40px;
+    font-size: 17px;
+
     top: 40%;
 }
 
