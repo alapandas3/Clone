@@ -47,15 +47,15 @@ function expand(param) {
 3. 
 */
 const navbarTogglerIcon = document.querySelector('.navbar-toggler ');
-navbarTogglerIcon.addEventListener('click', function () {
-    const element = document.getElementById('sidebar');
+// navbarTogglerIcon.addEventListener('click', function () {
+//     const element = document.getElementById('sidebar');
 
-    if (!element.classList.contains('sidebar-open')) {
-        element.classList.add('sidebar-open');
-    } else {
-        element.classList.remove('sidebar-open');
-    }
-})
+//     if (!element.classList.contains('sidebar-open')) {
+//         element.classList.add('sidebar-open');
+//     } else {
+//         element.classList.remove('sidebar-open');
+//     }
+// })
 
 
 function hidesidebar() {
@@ -67,7 +67,7 @@ function hidesidebar() {
 
             sidebar.style.display = 'none';
         }, 200);
-        navbarTogglerIcon.innerHTML = '<span class="navbar-toggler-icon"></span>';
+        navbarTogglerIcon.innerHTML = '<i class="bi bi-list"></i>';
     } else {
         sidebar.style.display = 'block';
         setTimeout(() => {
