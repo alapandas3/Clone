@@ -258,7 +258,7 @@ li ol {
     left: 0;
     width: 100%;
     background: var(--WHITE);
-    box-shadow: 0 5px 5px -2px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.1);
     z-index: 9999;
 }
 
@@ -403,7 +403,7 @@ nav a {
     position: fixed;
     top: 0;
     left: 0;
-    width: 300px;
+    width: 250px;
     height: 100%;
     z-index: 999;
     background-color: white;
@@ -541,7 +541,9 @@ nav a {
 .VideoPlayer {
     z-index: 1;
 }
-
+.VideoPlayer video{
+    display: block;
+}
 #myVideo {
 
     object-fit: cover;
@@ -633,8 +635,6 @@ nav a {
 }
 
 #additionalText h3 {
-    /* font-size: 61px;
-    line-height: 61px; */
     top: 30%;
 }
 
@@ -766,7 +766,7 @@ nav a {
 
 
 span {
-    padding: 0 4px;
+    padding: 1px 4px 0 4px;
 }
 
 #container-footer img {
@@ -795,10 +795,16 @@ span {
     display: flex;
     line-height: 28px;
 }
-
+#container-footer p{
+    font-weight: 300;
+}
+#contact-footer span:hover{
+    color: var(--primary-color) !important;
+}
 #footer-links {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 6px;
 }
 
 #footer-links img {
@@ -806,7 +812,10 @@ span {
     width: fit-content;
     padding: 3px;
     border-radius: 4px;
-
+}
+#footer-links a{
+    font-weight: 300;
+    gap: 4px;
 }
 
 span img {
@@ -817,11 +826,12 @@ span img {
 #bottom-links ul {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 10px;
     color: var(--secondary-color);
     font-size: 13px;
     font-weight: lighter;
-    padding: 0px 5px
+    padding: 0px 5px;
+    justify-content: center;
 }
 
 #bottom-link {
@@ -829,6 +839,6 @@ span img {
     color: var(--secondary-color);
 }
 
-#bottom-link:hover {
+#bottom-link span:hover {
     color: var(--primary-color);
 }
